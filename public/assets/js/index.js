@@ -1,5 +1,5 @@
 var $addItemForm = document.querySelector('form.add-item')
-var $itemsList = document.querySelector('.items .list')
+var $itemsList = document.querySelector('.items.list')
 var $clearButton = document.querySelector('[data-action="clear"]')
 
 /**
