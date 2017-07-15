@@ -16,7 +16,7 @@ node -v
 ## Setup
 
 ```
-git clone https://github.com/hoodiehq/hoodie-app-tracker.git
+git clone https://github.com/fozy81/form-builder.git
 cd form-builder
 npm install --production
 ```
@@ -43,7 +43,7 @@ You can find a detailed instruction [here](deployment.md).
 
 ## Contribute
 
-`hoodie-app-tracker` is work in progress. The goal is to have a simple
+`form-builder` is work in progress. The goal is to have a simple
 application with very clear and easy to understand HTML / CSS / JS code which
 ideally uses no 3rd party code at all, besides the Hoodie client.
 
