@@ -1,13 +1,10 @@
-# hoodie-app-tracker
+# form-builder
 
-> Default Hoodie app
+> Demo Hoodie app
 
-[![Build Status](https://travis-ci.org/hoodiehq/hoodie-app-tracker.svg?branch=master)](https://travis-ci.org/hoodiehq/hoodie-app-tracker)
-[![Dependency Status](https://david-dm.org/hoodiehq/hoodie-app-tracker.svg)](https://david-dm.org/hoodiehq/hoodie-app-tracker)
-[![devDependency Status](https://david-dm.org/hoodiehq/hoodie-app-tracker/dev-status.svg)](https://david-dm.org/hoodiehq/hoodie-app-tracker#info=devDependencies)
 
-Tracker is a simple Hoodie app, meant to be a starting point to play and build
-with Hoodie. Find the repository on [GitHub](https://github.com/hoodiehq/hoodie-app-tracker).
+Form builder is a simple Hoodie app, meant to be a starting point to play and build
+with Hoodie.
 
 ## Requirements
 
@@ -20,7 +17,7 @@ node -v
 
 ```
 git clone https://github.com/hoodiehq/hoodie-app-tracker.git
-cd hoodie-app-tracker
+cd form-builder
 npm install --production
 ```
 
