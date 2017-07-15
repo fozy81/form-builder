@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tracker | Form builder</title>
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="assets/app.css" />
+  </head>
+
+  <body data-account-state="">
+    <header>
+      <h1><a href="/">Form builder</a></h1>
+      <nav>
+        <ul>
+          <li>
+            <a href="account.html">
+              <span data-hide-if="signed-in">login/sign up</span>
+              <span data-hide-if="signed-out" data-value="username"></span>
+            </a>
+          </li>
+          <li><a href="forms.html">build form</a></li>
+          <li><a href="enter_results.html" class="active">enter results</a></li>
+          <li><a href="view_results.html">view results</a></li>
+          <li><a href="about.html">about</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+    <h2><label for="select_form">Select form:</label>
+        <select size="1" name="select" id="select_form" required></select></h2>
+
+
+<div><form id="form_id"  class="form-create"></form>
+</div>
+
+
+    </main>
+        </body>
+        <script src="/hoodie/client.js"></script>
+        <script src="assets/js/common.js"></script>
+        <script src="assets/js/enter_results.js"></script>
+        </html>
