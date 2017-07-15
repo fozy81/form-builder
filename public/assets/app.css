@@ -98,13 +98,12 @@ body > header ul {
 }
 body > header ul li {
   border-radius: 1px;
-  border: 1px solid #CCC;
-  background: #CCC;
+  border: 1px solid #559b57;
+  background: #9add9f;
   color: #000;
   display: inline-block;
-  padding: 0.5rem;
-  margin: 5px;
-
+  padding: 0.8rem;
+  margin: 0.4rem;
 }
 body > header ul li:not(:last-child) {
   margin-right: 20px;
@@ -313,7 +312,7 @@ button,
 .btn {
   display: inline-block;
   border-radius: 5px;
-  background: #CCC;
+  background: #e3e2e2;
   color: #000;
   padding: 1rem;
   border: 1px solid #CCC;
