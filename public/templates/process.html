@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="theme-color" content="#030154"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Form builder</title>
+<link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
+<link rel="stylesheet" href="assets/app.css" />
+  </head>
+
+<body>
+  <header>
+    <h1><a href="/">Form builder</a></h1>
+    <nav>
+      <ul>
+        <li>
+          <a href="account.html">
+            <span data-hide-if="signed-in">login/sign up</span>
+            <span data-hide-if="signed-out" data-value="username"></span>
+          </a>
+        </li>
+        <li><a href="forms.html">build form</a></li>
+        <li><a href="process.html" class="active">build form</a></li>
+        <li><a href="enter_responses.html">enter responses</a></li>
+        <li><a href="view_responses.html">view responses</a></li>
+        <li><a href="about.html">about</a></li>
+
+      </ul>
+    </nav>
+  </header>
+  <form class="form-create">
+
+      <label for="input-process">Process Title</label>
+      <input type="text" name="proces-name" id="input-process" placeholder="" required>
+      <label for="input-text">Describe process</label>
+      <input type="text" name="task-text" id="input-text" required>
+              <p></p>
+    <p></p>
+    <div class="question" id="form">
+      <div id="question">
+      <label for="input-question-1">Add form</label>
+      <input type="text" name="question" id="input-question-1" required>
+              <p></p>
+
+            </div>
+
+
+               <button id="advanced-button" type="button">Advanced settings ></button>
+                 <label for="test-location-1">Test location</label>
+               <input type="text" name="test-location" id="test-location-1" value="default" required>
+                       <p></p>
+                       <label for="location-enttiy-1">Location Entity</label>
+                       <input type="text" name="tasklocation-enttiy" id="location-enttiy-1" value="default" required>
+                               <p></p>
+                                 <label for="media-1">Media</label>
+                               <input type="text" name="task-media" id="media-1" value="default" required>
+                                       <p></p>
+                                       <label for="media-1">Instrument type</label>
+                                     <input type="text" name="task-media" id="media-1" value="default" required>
+                                             <p></p>
+                                             <label for="media-1">Instrument ID</label>
+                                           <input type="text" name="task-media" id="media-1" value="default" required>
+                                                   <p></p>
+                                                   <label for="media-1">Container type</label>
+                                                 <input type="text" name="task-media" id="media-1" value="default" required>
+                                                         <p></p>
+                                       <button id="add">Add another form</button>
+                                           <p></p>
+    <button id="submit" type="submit">Save process</button>
+  </form>
+
+<header>
+  <script src="/hoodie/client.js"></script>
+  <script src="assets/js/common.js"></script>
+  <script src="assets/js/forms.js"></script>
+  <script src="assets/vendor/jquery-2.1.0.min.js"></script>
+  <script src="assets/js/service-worker.js"></script>
+<main>

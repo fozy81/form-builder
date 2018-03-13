@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="theme-color" content="#030154"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Form builder</title>
+    <link rel="shortcut icon" href="public/assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="public/assets/vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="public/assets/vendor/prism/prism.css">
+    <link rel="stylesheet" href="public/assets/app.css">
+    <link rel="manifest" href="public/manifest.json">
+    <meta name="viewport" content="width=device-width">
+    <script src="public/assets/vendor/jquery-2.1.0.min.js"></script>
+    <script src="public/assets/vendor/bootstrap/js/bootstrap.js"></script>
+    <script src="public/assets/vendor/prism/prism.js"></script>
+    <script src="public/assets/vendor/bootstrap.modalform.js"></script>
+
+
+  </head>
+
+  <body data-account-state="" data-store-state="">
+     <div class="container">
+        <div class="jumbotron">
+    <header>
+      <h1><a href="/">Form builder</a></h1>
+      <nav>
+        <ul>
+          <li>
+            <a href="account.html">
+              <span data-hide-if="signed-in">login/sign up</span>
+              <span data-hide-if="signed-out" data-value="username"></span>
+            </a>
+          </li>
+           <li><a href="build_forms.html">build form</a></li>
+           <li><a href="enter_responses.html">enter responses</a></li>
+           <li><a href="view_responses.html">view responses</a></li>
+            <li><a href="index.html">about</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+
+      <h2>Build the forms of your dreams!</h2>
+    <ul>
+      <li><h3>Use forms offline</h3></li>
+      <li><h3>Easy to design</h3></li>
+      <li><h3>No sign-up required</h3></li>
+    </ul>
+   <p>
+  <a href="forms.html"><h1>Start building forms!</h1></a>
+  <p class="service-worker-status-text">Your ServiceWorker status is: <strong class="service-worker-status"></strong></p>
+</div> <!-- /.jumbotron -->
+ </div> <!-- /.container -->
+    </main>
+
+    <script src="/hoodie/client.js"></script>
+    <script src="public/assets/js/common.js"></script>
+<!-- <script src="assets/js/index.js"></script> -->
+    <script src="public/assets/js/service-worker.js"></script>
+<!--  <script src="/_api/_files/hoodie.js"></script> -->
+
+
+  </body>
+</html>
