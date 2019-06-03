@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # form-builder
 
 > Demo Hoodie app
@@ -72,3 +73,7 @@ It’s best to join our [chat](http://hood.ie/chat/).
 ## License
 
 [Apache 2.0](http://www.apache.org/licenses/LICENSE-2.0)
+=======
+# hapi-app
+Created with [hoodie](https://github.com/hoodiehq)
+>>>>>>> 97517dc52680e18f6f5dd88aefb5a6ff0bc903d7

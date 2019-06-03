@@ -22,8 +22,21 @@
   "scripts": {
     "pretest": "standard 'test/**/*.js'",
     "test": "node test/index.js",
-    "start": "hoodie",
+    "start": "hoodie --inMemory",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+  },
+  "hoodie": {
+    "address": "127.0.0.1",
+    "port": 8080,
+    "data": ".hoodie",
+    "public": "public",
+    "dbUrl": "http://admin:admin@127.0.0.1:5984",
+    "dbAdapter": "pouchdb-adapter-fs",
+    "inMemory": true,
+    "loglevel": "warn",
+    "url": "http://127.0.0.1:5984",
+    "adminPassword": "admin",
+    "name": "my-hoodie-app"
   },
   "dependencies": {
     "hoodie": "28.2.0"

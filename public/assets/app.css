@@ -3,7 +3,8 @@
 }
 html {
   color: #222;
-  font: 18px/1.5 Verdana, Helvetica;
+  font-family: Arial;
+  font-size: 18px/1.5;
 }
 body {
   margin: 1rem auto;
@@ -17,7 +18,8 @@ a {
 }
 
 a.active {
-  text-decoration: underline;
+  text-decoration: none;
+  border-bottom: 2px solid blue;
 }
 
 a:hover {
@@ -26,6 +28,12 @@ a:hover {
 
 p {
   margin-top: 0;
+}
+
+body > header h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  height: 20px;
 }
 
 label {
@@ -51,14 +59,26 @@ input {
   padding: 1rem;
   width: 100%;
 }
-
 table {
   width: 100%;
+  overflow: auto;
 }
-
+select {
+   font-size: 1.2rem;
+   height: 1.4rem;
+   border: 1px solid #ccc;
+   margin: 0.3rem;
+}
+hr {
+  border: 0.5px solid #b0aeae;
+  border-radius: 0.5px;
+  width: 103%;
+  color: #d3d0d0;
+  box-shadow: 0px 1px 5px #a4a2a2;
+}
 /* Header */
 body > header {
-  padding: 25px 0;
+  padding: 20px 0;
   position: relative;
 }
 body > header a {
@@ -72,15 +92,16 @@ body > header h1 {
 }
 @media (min-width: 768px) {
   body > header {
-    padding: 45px 0;
+    padding: 25px 0;
   }
   body > header h1 {
-    position: relative;;
+    position: relative;
     display: inline-block;
     left: 0;
     top: 50%;
-    transform: translateY(-50%);
-    padding: 20px
+    bottom: 25%;
+    transform: translateY(-100%);
+    padding: 10px;
   }
   body > header nav {
     position: relative;
@@ -98,8 +119,7 @@ body > header ul {
 }
 body > header ul li {
   border-radius: 1px;
-  border: 1px solid #559b57;
-  background: #9add9f;
+  border: 1px solid #00f;
   color: #000;
   display: inline-block;
   padding: 0.8rem;
@@ -125,6 +145,15 @@ body > header ul li:not(:last-child) {
 [data-account-state='signed-out'] [data-hide-if="signed-out"] {
   display: none;
 }
+[connection-status='status-off'],
+[connection-status='status-ready'] {
+  display: block;
+}
+[connection-status='status-off'] [data-hide-if="status-off"],
+[connection-status='status-ready'] [data-hide-if="status-ready"] {
+  display: none;
+}
+
 
 /* index page */
 form.add-item {
@@ -181,6 +210,10 @@ form.add-item button {
   }
 }
 
+form.form-create {
+  height: 10px;
+}
+
 .items {
   display: none;
 }
@@ -197,9 +230,10 @@ form.add-item button {
 }
 
 @media (min-width: 768px) {
-  .items table + button {
+   table + button {
     width: auto;
     float: right;
+    overflow: auto;
   }
 }
 
@@ -310,12 +344,15 @@ table td input {
 
 button,
 .btn {
-  display: inline-block;
-  border-radius: 5px;
+  display: block;
+  float: left;
+  border-radius: 4px;
   background: #e3e2e2;
   color: #000;
   padding: 1rem;
+  margin: 2%;
   border: 1px solid #CCC;
+  width: 90%
 }
 
 button,
@@ -335,9 +372,9 @@ button.primary {
 
 input,
 table {
-  border: 1px solid #A1A1A1;
+  border: 5px solid #A1A1A1;
+  border-radius: 4px;
 }
-
 table {
   border-collapse: collapse;
 }
@@ -355,6 +392,7 @@ input:focus {
 
 table {
   border: 1px solid blue;
+  border-radius: 4px;
   margin-bottom: 15px;
 }
 
@@ -362,6 +400,8 @@ table th,
 table td {
   padding: 1rem;
   text-align: left;
+  border: solid #f1f1f1 5px;
+  border-radius: 4px;
 }
 
 table th:first-child,
@@ -370,7 +410,8 @@ table td:first-child {
 }
 
 table td {
-  border: 1px solid #A1A1A1;
+  border-radius: 4px;
+  background-color: #f1f1f1;
 }
 
 table a {
@@ -378,11 +419,11 @@ table a {
 }
 
 table tr td:first-child {
-  width: 150px;
+  width: 180px;
 }
 
 table tr td:nth-child(2) {
-  width: 300px;
+  width: 120px;
 }
 
 table td > a {
@@ -412,3 +453,195 @@ img.low-profile-dog {
   clip: rect(0, 0, 0, 0);
   border: 0;
 }
+.form-hide {
+  display: none;
+}
+table {
+  display: table;
+  float: left;
+  overflow: auto;
+}
+body {
+  background: transparent;
+  font-size: 16px;
+}
+.container {
+  position: relative;
+  background: #fff;
+  margin-top: -10px;
+  padding: 0;
+  box-shadow: 0 0 10px rgba(0,0,0,.5);
+}
+.content {
+  padding: 20px;
+}
+/* Make the content easier to read by limiting the width of the elements. */
+.content {
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Add more space around the page elements */
+.content nav:last-child {
+  margin-top: 30px;
+  margin-bottom: 60px;
+}
+.content pre,
+.content .service-worker-status-text {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+.content form {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.content .ciu_embed {
+  margin-top: 30px;
+}
+.content pre {
+  border-width: 0;
+}
+
+.copy {
+  padding: 20px;
+  margin: 30px 0 0;
+  border-radius: 5px;
+}
+.jumbotron,
+.copy {
+  background: #f5f5f5;
+  margin: 0;
+  border-radius: 0;
+}
+.copy p {
+  margin: 0;
+}
+.jumbotron {
+    text-align: center;
+}
+.colorList {
+  margin: 20px 0;
+  border: 1px solid #ddd;
+  border-bottom: 0;
+  padding: 0;
+}
+.colorList li {
+  list-style: none;
+  padding: 10px 20px;
+  border-bottom: 1px solid #ddd;
+}
+.colorList li:hover {
+  background: #eee;
+}
+
+.colorList li:first-child:after {
+  content: ' current color';
+  color: #ccc;
+  margin-left: 20px;
+  font-style: italic;
+  font-size: 0.8;
+}
+.colorList li .remove {
+  color: #c00;
+  font-weight: bold;
+}
+
+.content h3 {
+  border-top: 1px solid #ddd;
+  padding-top: 10px;
+  margin-top: 50px;
+}
+
+.service-worker {
+  display: none;
+}
+.service-worker.loading {
+  display: block;
+}
+
+.service-worker-status-text {
+  text-align: center;
+}
+
+.service-worker-status,
+.connect-status,
+.status,
+.connection-status {
+  padding: 0 5px 2px 5px;
+}
+
+.glyphicon {
+  font-size: 1.5em;
+  vertical-align: middle;
+}
+
+.connect-status-success{
+  color: #690;
+}
+
+.connect-status-error{
+  color: #F00;
+}
+
+[data-service-worker="ready"] .service-worker.ready {
+  display: block;
+}
+[data-service-worker="error"] .service-worker.error {
+  display: block;
+}
+
+[data-service-worker="not-supported"] .service-worker.loading,
+[data-service-worker="error"] .service-worker.loading,
+[data-service-worker="ready"] .service-worker.loading {
+  display: none;
+}
+/* Project card */
+.projectcard {
+  display: inline;
+}
+
+/* Dropdown Button */
+.dropbtn {
+ background-color: #3498DB;
+ color: white;
+ padding: 16px;
+ font-size: 16px;
+ border: none;
+ cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+ background-color: #2980B9;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+ display: inline-block;
+ float: right;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+ display: none;
+ position: absolute;
+ background-color: #f1f1f1;
+ min-width: 160px;
+ box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+ z-index: 1;
+ float: left; 
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+ color: black;
+ padding: 12px 16px;
+ text-decoration: none;
+ display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
