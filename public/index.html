@@ -1,76 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+ <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Tracker</title>
+    <title>Wayoway</title>
     <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="assets/app.css" />
-  </head>
+ </head>
 
-  <body data-account-state="" data-store-state="">
-    <header>
-      <h1><a href="/">Form builder</a></h1>
-      <nav>
-        <ul>
-          <li>
-            <a href="account.html">
-              <span data-hide-if="signed-in">login/sign up</span>
-              <span data-hide-if="signed-out" data-value="username"></span>
-            </a>
-          </li>
-           <li><a href="forms.html">build form</a></li>
-            <li><a href="enter_results.html">enter results</a></li>
-            <li><a href="view_results.html">view results</a></li>
-            <li><a href="about.html">about</a></li>
-        </ul>
-      </nav>
-    </header>
+  <body data-account-state="" data-store-state="" connection-status="">
+  <header>
+     <h1><a href="/">dataProject</a></h1>
+   <nav>
+   </nav>
+  </header>
 
-    <main>
+  <main>
+   <h2 id="breadcrumb"></h2>
 
       <h2>Build the forms of your dreams!</h2>
 <ul>
     <li><h3>Works offline</h3></li>
-      <li><h3>Easy to design</h3></li>
-        <li><h3>No sign-up required to get started</h3></li>
-    </ul>
-   <p>
-         </div>
-  <a href="forms.html"><h1>Get start now!</h1></a>
+    <li><h3>Easy to design forms</h3></li>
+    <li><h3>No sign-up required</h3></li>
+  </ul>
+ <p>
 
+  <a href="project.html"><h1>Get start now!</h1></a>
 
-      <!-- <form class="add-item">
-        <div class="amount">
-          <label for="input-amount">Amount</label>
-          <input type="number" name="amount" id="input-amount" required>
-        </div>
-        <div class="item">
-          <label for="input-note">Item</label>
-          <input type="text" name="note" id="input-note" required>
-        </div>
-        <button type="submit">Add item</button>
-      </form>
-
-      <div class="items" data-num="0">
-        <table>
-          <tbody class="placeholder" data-hide-if="store-not-empty">
-            <tr>
-              <td colspan="4">
-                Nothing tracked yet, add something!
-              </td>
-            </tr>
-          </tbody>
-          <tbody class="list" data-hide-if="store-empty"></tbody>
-        </table>
-        <button data-action="clear" data-hide-if="store-empty">
-          Clear tracked items
-        </button>
-      </div> -->
     </main>
-
     <script src="/hoodie/client.js"></script>
+    <script src="assets/js/service-worker.js"></script>
     <script src="assets/js/common.js"></script>
-    <script src="assets/js/index.js"></script>
-  </body>
+    <script src="assets/js/database-configuration.js"></script>
+    <script type="module" src="assets/js/projects.js"></script>
+    </body>
 </html>
