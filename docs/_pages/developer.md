@@ -1,0 +1,1 @@
+../_posts/2019-06-09-developer.md
