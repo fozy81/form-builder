@@ -1,6 +1,6 @@
 ---
-layout: default
-title: "What is WayOway?"
+layout: post
+title: "Developers"
 ---
 
 ## API description
