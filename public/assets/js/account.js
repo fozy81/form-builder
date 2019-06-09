@@ -1,3 +1,4 @@
+import { renderNav } from '/assets/js/components/navbar.js'
 var originalDocumentTitle = document.title
 var locationHash = window.location.hash.replace('#', '')
 
@@ -7,6 +8,10 @@ var locationHash = window.location.hash.replace('#', '')
  * If yes, then set the data-show attribute of the container element to what
  * is in the data-action of the clicked attribute (after the show- prefix)
  */
+ let nav = document.querySelector('nav')
+  /* render navbar */
+ renderNav(nav)
+
 ;[].forEach.call(document.querySelectorAll('[data-show]'), function (el) {
   el.addEventListener('click', function (event) {
     var action = event.target.dataset.action

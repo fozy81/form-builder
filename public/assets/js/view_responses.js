@@ -1,14 +1,19 @@
+import { renderNav } from '/assets/js/components/navbar.js'
+
+let nav = document.querySelector('nav')
+ /* render navbar */
+renderNav(nav)
 // find results and dislay in div id="results"
 var $itemsList = document.querySelector('#results')
 
 // // query documents with prefix 'response'
-const responsesStore = hoodie.store.withIdPrefix('response/')
+// const responsesStore = hoodie.store.withIdPrefix('response/')
 /**
  * With hoodie we're storing our data locally and it will stick around next time you reload.
  * This means each time the page loads we need to find any previous notes that we have stored.
  */
 function loadAndRenderItems () {
-  responsesStore.findAll().then(render)
+ hoodie.store.findAll().then(render)
 }
 
 /* render items initially on page load */
@@ -34,6 +39,8 @@ function render (items) {
     return
   }
 
+  console.log(items[15])
+
   document.body.setAttribute('data-store-state', 'not-empty')
   var count = 0
   var total = items.length
@@ -41,22 +48,36 @@ function render (items) {
   $itemsList.innerHTML = items
 
     // .sort(items.createdAt)
-    .sort(orderByCreatedAt)
+  //  .sort(orderByCreatedAt)
     .map(function (item) {
+      var tableRow = ''
       totalCount++
-      if (typeof item.responses !== 'undefined') {
+
+      if (item.doc !== undefined) {
+            return tableRow
+      }
+        else if (item.forms[0] == undefined) {
+         return tableRow
+      } else if (item.forms[0].questions == undefined ) {
+         return tableRow
+       } else if (item.forms[0].questions[0].response == undefined ) {
+        return tableRow
+       } else {
+        console.log(item)
         count++
-        var tableRow = ''
-        for (var i = 0; i < item.responses.length; i++) {
+       for (var j = 0; j < item.forms.length; j++) {
+        for (var i = 0; i < item.forms[j].questions.length; i++) {
         var timeDate = new Date(item.hoodie.createdAt)
         var formId = item._id.slice(-7)
-                  tableRow += '<tr><td>' + item.questions[i] +
-                     '</td><td>' + item.responses[i] +
-                     '</td><td>' + item.formName +
+        var formName =  item.forms[j].form_name_id
+                  tableRow += '<tr><td>' + item.forms[j].questions[i].question +
+                     '</td><td>' + item.forms[j].questions[i].response +
+                     '</td><td>' + formName +
                      '</td><td>' + timeDate +
                      '</td><td>' + formId +
                      '</td></tr>'
         }
+      }
 
         if (count === 1) {
           var tableHead = '<table>' +
@@ -72,10 +93,10 @@ function render (items) {
           var tableFoot = '</table>'
           tableRow = tableRow + tableFoot
         }
-
+        console.log(tableRow)
         return tableRow
-      } else { // if no responses in database return empty
-      }
+      } // else { // if no responses in database return empty
+      // }
     }).join('')
 }
 

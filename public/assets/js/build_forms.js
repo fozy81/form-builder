@@ -1,5 +1,5 @@
 
-
+import { renderNav } from '/assets/js/components/navbar.js'
 var locationHash = window.location.hash.replace('#', '')
 // display list of available forms
 var formList = document.querySelector('#form-list')
@@ -12,6 +12,12 @@ function renderFormList () {
 renderFormList()
 
 function renderList (items) {
+
+  let nav = document.querySelector('nav')
+   /* render navbar */
+  renderNav(nav)
+
+
   var list = ''
   for (i = 0; i < items.length; i++) {
       list += '<option value=' + items[i].forms[0].form_name_id +
