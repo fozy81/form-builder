@@ -1,8 +1,10 @@
 ---
-layout: doc
-title: "developer"
-date: 2019-06-09 17:24:08
+layout: page
+title: "developers"
+category: ref
+date: 2019-06-09 17:31:39
 ---
+
 
 ## API description
 
