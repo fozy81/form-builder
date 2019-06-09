@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>wayOway</title>
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="assets/app.css" />
+ </head>
+
+  <body data-account-state="" data-store-state="" connection-status="">
+  <header>
+     <h1><a href="/">wayOway</a></h1>
+   <nav>
+   </nav>
+  </header>
+
+  <main>
+      <div >
+      <label for="Forms">Select form:</label>
+      <select size="1" name="unit-name" id="form-list" required></select>
+      </div>
+      <p></p>
+      <button id="add-form">Add form</button>
+      <p></p>
+      <button id="edit-form">Edit form</button>
+      <p></p>
+      <button id="new-form">New form</button>
+      <form class="form-create">
+
+          <label for="input-title">Form Title</label>
+          <input type="text" name="form-name" id="input-title" placeholder="" maxlength="26" required>
+          <label for="input-desc">Form Description</label>
+          <input type="text" name="form-desc" id="input-desc" placeholder="" maxlength="256">
+        <p></p>
+        <div class="question" id="form">
+          <div id="question">
+          <label for="input-question-1">Question</label>
+          <input type="text" name="question" id="input-question-1" required>
+          <label for="input-required-1">Question type</label>
+          <select name="select" id="input-select-1" required>
+               <option value="text">Text</option>
+                <option value="number">Number</option>
+                <option value="date">Date</option>
+                <option value="time">Time</option>
+                <option value="select">Select list</option>
+          </select>
+              <p></p>
+            <!-- This will be option for selecting from pre-loaded selection list/table
+                  similar to the units list:
+          <label for="input-list-1">Select list name</label>
+            <select size="1" name="list-name" id="input-list-1" required></select>
+            <p></p> -->
+            <div id="advanced">
+             <h2>Advanced settings</h2>
+              <label for="input-required-1">Required</label>
+              <input type="checkbox" name="required" id="input-required-1">
+             <p></p>
+              <label for="input-multi-1">Allow multiple responses</label>
+              <input type="checkbox" name="required" id="input-multi-1">
+            <p></p>
+             <label for="units">Select unit:</label>
+             <select size="1" name="unit-name" id="units" required></select>
+            <p></p>
+          <hr></div>
+        </div>
+      </div>
+       <button id="add">Add question</button>
+       <p></p>
+       <button id="submit" type="submit">Save form</button>
+       </form>
+
+</main>
+    </body>
+    <script src="hoodie/client.js"></script>
+    <script src="assets/js/common.js"></script>
+    <script src="assets/js/database-configuration.js"></script>
+    <script type="module" src="assets/js/build_forms.js"></script>
+    <script src="assets/vendor/jquery-2.1.0.min.js"></script>
+    <script src="assets/js/service-worker.js"></script>
+
+    </html>
