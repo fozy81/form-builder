@@ -1,3 +1,8 @@
+---
+title: This is my title
+layout: page
+---
+
 ## What is WayOway?
 
   WayOway is a simple way to plan data gathering for your research project.

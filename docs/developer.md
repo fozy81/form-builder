@@ -1,3 +1,8 @@
+---
+title: This is my title
+layout: page
+---
+
 ## API description
 
 Data is stored in documents compromising of a single **Item**. Firstly, each **Item** stores all the meta-data associated with the project it is associated with. Nested beneath the **Item** and **Form**(s). The Form contains all the meta-data required for the form. Beneath each form at the **Question**(s). Questions contain all the information about the question as well as a 'response' field which is the raw response input by the user.
