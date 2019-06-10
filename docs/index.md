@@ -3,7 +3,7 @@ layout: default
 title: "What is WayOway?"
 ---
 
-# What is WayOway?
+# Welcome
 
   WayOway is a simple way to plan data gathering for your research project.
   Create a project, add the items you need and the forms you need to
@@ -42,15 +42,9 @@ WayOway is an open-source project hosted here:
   but you can contribute much more than just code</a>.
 
 
-# Questions? Ideas?
-  Talk to us :)
-  <a href="https://github.com/fozy81/form-builder/issues">
- open an issue.
-  </a>
+# Developer Guide
 
-# Developers
-
-## Database
+## Intro
 
   WayOway uses Couchdb, a nosql, document database as a backend. Couchdb allows multi-master sync, scales from Big Data to Mobile,
   with an Intuitive HTTP/JSON API and designed for Reliability.
