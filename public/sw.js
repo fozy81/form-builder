@@ -3,7 +3,7 @@
 // flow and the old cache will be purged as part of the activate event handler when the
 // updated ServiceWorker is activated
 
-var CACHE_VERSION = 1
+var CACHE_VERSION = 2
 var CURRENT_CACHE = 'dependencies-cache-v' + CACHE_VERSION
 // Files required to make this app work offline
 var REQUIRED_FILES = [

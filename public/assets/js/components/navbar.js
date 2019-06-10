@@ -9,7 +9,7 @@ export function renderNav(nav) {
     '<li><a href="/design_forms.html">Design forms</a></li>' +
     '<li><a href="/project.html">Projects</a></li>' +
     '<li><a href="/view_responses.html">View responses</a></li>' +
-    '<li><a target=_blank href="/about.html">Help</a></li>' +
+    '<li><a target=_blank href="https://fozy81.github.io/form-builder/">Help</a></li>' +
     '<li><a href="#">' +
       '<span data-hide-if="status-ready">⛈</span>' +
       '<span data-hide-if="status-off">📡</span>' +
