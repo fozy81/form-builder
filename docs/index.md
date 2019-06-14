@@ -5,8 +5,8 @@ title: "What is WayOway?"
 
 # Welcome
   WayOway is a simple way to plan data gathering for your research project.
-  Create a project, add the items you need and the forms you need to
-  complete. Then monitor and update your project as it progresses.
+  Create a project, add items and forms you need to complete. Then monitor,
+  update and share your project as it progresses.
 
   We intentionally kept its functionality, design and code to a minimum,
   so we can focus on building robust foundations for your project. This

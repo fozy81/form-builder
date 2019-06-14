@@ -13,13 +13,13 @@ body {
 }
 
 a {
-  color: #3498db;
+  color: #0f5b9e;
   text-decoration: none;
 }
 
 a.active {
   text-decoration: none;
-  border-bottom: 2px solid #337ab7;
+  border-bottom: 2px solid #0f5b9e;
 }
 
 a:hover {
@@ -268,7 +268,7 @@ form.form-create {
 .signup-link {
   margin-top: 25px;
   text-align: center;
-  border: 1px solid #337ab7;
+  border: 1px solid #0f5b9e;
   border-radius: 5px;
   padding: 15px;
 }
@@ -294,8 +294,8 @@ form.form-create {
   right: 15px;
 }
 .options button:hover {
-  border: 2px solid #337ab7;
-  color: #337ab7;
+  border: 2px solid #0f5b9e;
+  color: #0f5b9e;
 }
 
 .options button:not(:last-child) {
@@ -365,9 +365,9 @@ button,
 }
 
 button.primary {
-  background-color: #337ab7;
+  background-color: #0f5b9e;
   color: #fff;
-  border: 1px solid #337ab7;
+  border: 1px solid #0f5b9e;
 }
 
 input,
@@ -387,11 +387,11 @@ table th:first-child{
 input:focus {
   border-color: transparent;
   outline: none;
-  box-shadow: 0 0 0 2px #337ab7;
+  box-shadow: 0 0 0 2px #0f5b9e;
 }
 
 table {
-  border: 1px solid #337ab7;
+  border: 1px solid #0f5b9e;
   border-radius: 4px;
   margin-bottom: 15px;
 }
