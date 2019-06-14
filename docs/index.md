@@ -32,7 +32,7 @@ title: "What is WayOway?"
   Find out more about Hoodie:
   <a href="hood.ie/intro/"></a>
 
-  <img src="/assets/low-profile-dog.png" alt="Illustration of Hoodie’s 'Low-Profile Dog' waving" class="low-profile-dog">
+  <img src="low-profile-dog.png" alt="Illustration of Hoodie’s 'Low-Profile Dog' waving" class="low-profile-dog">
   Your data is held in a couchdb based database. Allowing access directly via a web api or via a python or R libraries.
 
 
