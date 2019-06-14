@@ -20,7 +20,6 @@ title: "What is WayOway?"
   For physical samples, you can print labels and keep track of your samples
   as they pass through your analysis processes.
 
-  <img src="/assets/low-profile-dog.png" alt="Illustration of Hoodie’s 'Low-Profile Dog' waving" class="low-profile-dog">
  WayOway uses the Hoodie javascript framework and implements all its features for you:
 
 <ul>
@@ -33,9 +32,8 @@ title: "What is WayOway?"
   Find out more about Hoodie:
   <a href="hood.ie/intro/"></a>
 
+  <img src="/assets/low-profile-dog.png" alt="Illustration of Hoodie’s 'Low-Profile Dog' waving" class="low-profile-dog">
   Your data is held in a couchdb based database. Allowing access directly via a web api or via a python or R libraries.
 
 
-WayOway is an open-source project hosted here:
-    <a href="https://github.com/fozy81/form-builder">  
-  but you can contribute much more than just code</a>.
+WayOway is an open-source project hosted <a href="https://github.com/fozy81/form-builder">here</a>.

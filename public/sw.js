@@ -3,7 +3,7 @@
 // flow and the old cache will be purged as part of the activate event handler when the
 // updated ServiceWorker is activated
 
-var CACHE_VERSION = 2
+var CACHE_VERSION = 1
 var CURRENT_CACHE = 'dependencies-cache-v' + CACHE_VERSION
 // Files required to make this app work offline
 var REQUIRED_FILES = [
@@ -69,7 +69,10 @@ var REQUIRED_FILES = [
   'index.html',
   'items.html',
   'project.html',
-  'view_responses.html'
+  'view_responses.html',
+  'https://fozy81.github.io/form-builder/',
+  'https://fozy81.github.io/form-builder/ref/api-guide.html',
+  'https://fozy81.github.io/form-builder/ref/developers.html'
 ]
 
 // 'install' is fired once per ServiceWorker version, this happens

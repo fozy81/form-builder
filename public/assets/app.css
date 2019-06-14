@@ -13,13 +13,13 @@ body {
 }
 
 a {
-  color: blue;
+  color: #3498db;
   text-decoration: none;
 }
 
 a.active {
   text-decoration: none;
-  border-bottom: 2px solid blue;
+  border-bottom: 2px solid #337ab7;
 }
 
 a:hover {
@@ -119,7 +119,7 @@ body > header ul {
 }
 body > header ul li {
   border-radius: 1px;
-  border: 1px solid #00f;
+  border: 1px solid #4c89be;
   color: #000;
   display: inline-block;
   padding: 0.8rem;
@@ -268,7 +268,7 @@ form.form-create {
 .signup-link {
   margin-top: 25px;
   text-align: center;
-  border: 1px solid blue;
+  border: 1px solid #337ab7;
   border-radius: 5px;
   padding: 15px;
 }
@@ -294,8 +294,8 @@ form.form-create {
   right: 15px;
 }
 .options button:hover {
-  border: 2px solid blue;
-  color: blue;
+  border: 2px solid #337ab7;
+  color: #337ab7;
 }
 
 .options button:not(:last-child) {
@@ -365,9 +365,9 @@ button,
 }
 
 button.primary {
-  background-color: blue;
+  background-color: #337ab7;
   color: #fff;
-  border: 1px solid blue;
+  border: 1px solid #337ab7;
 }
 
 input,
@@ -387,11 +387,11 @@ table th:first-child{
 input:focus {
   border-color: transparent;
   outline: none;
-  box-shadow: 0 0 0 2px blue;
+  box-shadow: 0 0 0 2px #337ab7;
 }
 
 table {
-  border: 1px solid blue;
+  border: 1px solid #337ab7;
   border-radius: 4px;
   margin-bottom: 15px;
 }
@@ -629,7 +629,7 @@ body {
  min-width: 160px;
  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
  z-index: 1;
- float: left; 
+ float: left;
 }
 
 /* Links inside the dropdown */
