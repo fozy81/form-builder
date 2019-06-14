@@ -29,11 +29,11 @@ title: "What is WayOway?"
   <li>Change Username and Password</li>
 </ul>
 
-  Find out more about Hoodie:
-  <a href="hood.ie/intro/"></a>
+Your data is held in a couchdb based database. Allowing access directly via a web api or via a python or R libraries.
 
-  <img src="low-profile-dog.png" alt="Illustration of Hoodie’s 'Low-Profile Dog' waving" class="low-profile-dog">
-  Your data is held in a couchdb based database. Allowing access directly via a web api or via a python or R libraries.
+Find out more about Hoodie <a href="hood.ie/intro/">here</a>
 
+<img src="low-profile-dog.png" alt="Illustration of Hoodie’s 'Low-Profile Dog' waving" class="low-profile-dog">
+<p></p>
 
 WayOway is an open-source project hosted <a href="https://github.com/fozy81/form-builder">here</a>.
